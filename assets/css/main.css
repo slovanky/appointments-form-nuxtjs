@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+body {
+  @apply min-h-screen bg-gradient-to-b from-white to-[200px] to-[#F4F4F4];
+}
+
+.wrapper {
+  @apply w-full max-w-screen-lg mx-auto px-4;
+}
+
+.wrapper-wide {
+  @apply w-full max-w-screen-xl mx-auto px-4;
+}
