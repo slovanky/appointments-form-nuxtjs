@@ -90,7 +90,7 @@ function getTypeByResourceId(resourceId) {
           <div v-if="typeList.length">
             <ul class="space-y-5">
               <li v-for="(type, index) in typeList" :key="index">
-                <NuxtLink :to="'/doctor/' + resourceId + '/' + type.id" class="p-4 block space-y-3 bg-white border border-[#D6D7D9] rounded-md">
+                <NuxtLink :to="'/doctor/' + resourceId + '/' + type.id" class="p-4 block space-y-3 bg-white hover:bg-zinc-100 border border-[#D6D7D9] rounded-md">
                   <div class="flex items-center justify-between gap-x-4 gap-y-2">
                     <h3 class="text-lg font-bold capitalize">{{ type.name }}</h3>
                     <span class="px-3 py-0.5 bg-zinc-100 text-sm font-bold border border-zinc-200 rounded-full">{{ type.price == 0 ? 'FREE' : `$${type.price}` }}</span>
